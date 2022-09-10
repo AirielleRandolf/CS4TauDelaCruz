@@ -107,6 +107,11 @@ public class Q1Ex2 {
                             System.out.println("Your lower limit is equal to/higher than the upper limit. Please try again.");
                             continue;
                         }
+                        
+                        if(temp1 < 0 || temp2 < 0) {
+                            System.out.println("Your lower/upper limit is negative. Please try again.");
+                            continue;
+                        }
 
                         System.out.print("\n- Number of GUESSES allowed? (default: 5): ");
                         temp3 = Integer.parseInt(input.nextLine());
